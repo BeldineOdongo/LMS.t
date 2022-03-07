@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<title>sign in</title>
+<script>
+	const signinForm = document.getElementById("sign in form");
+    const signinButton = document.getElementById("sign in form");
+    const signinErrorMsg = document.getElementById("sign in-error-msg");
+
+    signinButton.addEventListener("click", (e) => {
+        e.preventDefault();
+    const useremail = signinform.username.value;
+    const password = signinform.password.value;
+
+        if (useremail === "user" && password === "web_dev") {
+        alert("You have successfully signed in.");
+        location.reload();
+           } else {
+        signinErrorMsg.style.opacity = 1;
+        }
+    })
+</script>
+<style>
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: purple;
+	background-size: cover;
+	background-position: center;
+}
+.sign-in-form{
+	width: 50px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+	background: green;
+	padding: 20px;
+	margin: 8% auto 0px;
+	text-align: center;
+}	
+.sign-in form h1{
+	color: green;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.input-box{
+border-radius: 20px;
+padding: 10px;
+margin: 10px;
+width: 50%;
+border: 1px solid green;
+outline: none;	
+}
+button{
+color: blue;
+width: 50%;
+padding: 10px;
+border-radius: 20px;
+font-size: 15px;
+margin: 10px 0;
+border: none;
+outline: none;
+cursor: pointer;
+}
+.signin-btn{
+	background-color: lightblue;
+}
+
+.twitter{
+	background-color: yellowgreen;
+}
+.facebook{
+	background-color: yellowgreen;
+}
+img{
+	width: 150px;
+	height: 150px;
+	margin-top: 50px;
+}
+</style>
+</head>
+<body>
+<div class="sign in form">
+	<center><img src="C:\Users\CISPS\Desktop\download.png"></center>
+<h1><center>sign in </h1>
+<form id="sign-in-form">
+<center><b><input type="email"class="input-box"placeholder="Enter your email">
+<input type="password"class="input-box"placeholder="Enter your password">
+<button type="button"class="signin-btn">sign in</button>
+<hr color:"green">
+<p class="or">OR SIGN IN USING</p>
+<button type="button"class="twitter">login with twitter</button>
+<button type="button"class="facebook">login with facebook</button>
+</form>
+</div>
+</body>
+</html>
+
